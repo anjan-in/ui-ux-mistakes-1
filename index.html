@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Mistake: Creativity Before Usability</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>UI/UX Mistake #1: Creativity Before Usability</h1>
+            <p class="lead">Hover over the dots to see annotations</p>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="title-label problem-label">Problem</div>
+                <div class="example-container problematic-container">
+                    <!-- Problematic Design -->
+                    <div class="problematic">
+                        <nav class="artistic-nav">
+                            <a href="#" class="nav-item">H o m e</a>
+                            <a href="#" class="nav-item">A b o u t</a>
+                            <a href="#" class="nav-item">W o r k s</a>
+                            <a href="#" class="nav-item">C o n t a c t</a>
+                        </nav>
+                        
+                        <div class="creative-icons">
+                            <div class="icon"><i class="fas fa-star text-white"></i></div>
+                            <div class="icon"><i class="fas fa-bolt text-white"></i></div>
+                            <div class="icon"><i class="fas fa-heart text-white"></i></div>
+                        </div>
+                        
+                        <h2 class="fancy-headline">Creative Expression</h2>
+                        
+                        <div class="artistic-content">
+                            <div class="feature-box">
+                                <p>Discover unique perspectives through our artistic lens.</p>
+                            </div>
+                            <div class="feature-box">
+                                <p>Pushing boundaries and challenging conventional design norms.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="artistic-button">Explore Now</button>
+                    </div>
+                    
+                    <!-- Annotation Dots -->
+                    <div class="annotation-dot bad" style="top: 35px; right: 30px;" data-id="nav"></div>
+                    <div class="annotation-dot bad" style="top: 100px; left: 140px;" data-id="icons"></div>
+                    <div class="annotation-dot bad" style="top: 150px; right: 140px;" data-id="typography"></div>
+                    <div class="annotation-dot bad" style="top: 250px; left: 100px;" data-id="interaction"></div>
+                    <div class="annotation-dot bad" style="top: 350px; right: 100px;" data-id="button"></div>
+                    
+                    <!-- Annotation Content -->
+                    <div class="annotation bad" id="annotation-nav" style="top: 35px; right: 30px; opacity: 0; transform: translateY(-10px);">
+                        Spaced-out letters and rotated text make navigation harder to scan and read
+                    </div>
+                    <div class="annotation bad" id="annotation-icons" style="top: 100px; left: 140px; opacity: 0; transform: translateY(-10px);">
+                        Abstract shapes without labels offer no clear meaning, creating unnecessary confusion
+                    </div>
+                    <div class="annotation bad" id="annotation-typography" style="top: 150px; right: 140px; opacity: 0; transform: translateY(-10px);">
+                        Decorative typography with gradient effects reduces readability
+                    </div>
+                    <div class="annotation bad" id="annotation-interaction" style="top: 250px; left: 100px; opacity: 0; transform: translateY(-10px);">
+                        3D rotation effects add visual noise and distract from content
+                    </div>
+                    <div class="annotation bad" id="annotation-button" style="top: 350px; right: 100px; opacity: 0; transform: translateY(-10px);">
+                        Skewed button with dashed border doesn't look clickable
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="title-label solution-label">Solution</div>
+                <div class="example-container improved-container">
+                    <!-- Improved Design -->
+                    <div class="improved">
+                        <nav class="navbar navbar-expand-lg standard-nav">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Brand</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Works</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        
+                        <div class="improved-content">
+                            <h2 class="mb-4">Creative Design, Intuitive Experience</h2>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-4 text-center">
+                                    <div class="p-3">
+                                        <i class="fas fa-star text-primary fa-2x mb-3"></i>
+                                        <h5>Discover</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="p-3">
+                                        <i class="fas fa-bolt text-primary fa-2x mb-3"></i>
+                                        <h5>Create</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <div class="p-3">
+                                        <i class="fas fa-heart text-primary fa-2x mb-3"></i>
+                                        <h5>Share</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feature-card">
+                                        <h3>Unique Perspective</h3>
+                                        <p>Discover artistic vision with intuitive design.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-card">
+                                        <h3>Boundary Pushing</h3>
+                                        <p>Creative design with familiar interactions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <button class="call-to-action">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Annotation Dots -->
+                    <div class="annotation-dot good" style="top: 35px; right: 30px;" data-id="std-nav"></div>
+                    <div class="annotation-dot good" style="top: 130px; left: 140px;" data-id="std-icons"></div>
+                    <div class="annotation-dot good" style="top: 190px; right: 140px;" data-id="std-typography"></div>
+                    <div class="annotation-dot good" style="top: 280px; left: 100px;" data-id="std-interaction"></div>
+                    <div class="annotation-dot good" style="top: 350px; right: 100px;" data-id="std-button"></div>
+                    
+                    <!-- Annotation Content -->
+                    <div class="annotation good" id="annotation-std-nav" style="top: 35px; right: 30px; opacity: 0; transform: translateY(-10px);">
+                        Standard navigation with clear labels and visual feedback on hover
+                    </div>
+                    <div class="annotation good" id="annotation-std-icons" style="top: 130px; left: 140px; opacity: 0; transform: translateY(-10px);">
+                        Recognizable icons with text labels that clearly explain their purpose
+                    </div>
+                    <div class="annotation good" id="annotation-std-typography" style="top: 190px; right: 140px; opacity: 0; transform: translateY(-10px);">
+                        Clear typography with proper hierarchy and readable fonts
+                    </div>
+                    <div class="annotation good" id="annotation-std-interaction" style="top: 280px; left: 100px; opacity: 0; transform: translateY(-10px);">
+                        Clean card design with subtle hover effects that enhance usability
+                    </div>
+                    <div class="annotation good" id="annotation-std-button" style="top: 350px; right: 100px; opacity: 0; transform: translateY(-10px);">
+                        Visually prominent button with standard styling that clearly indicates it's clickable
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>UI/UX Design Principles - Creativity vs. Usability Example</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
